@@ -1,29 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PRUEBA</title>
 
-     <!-- VINCULACIÓN: etiqueta link de CSS -->
+    <!-- VINCULACIÓN: etiqueta link de hojas de estilo CSS -->
 
-     <link rel="stylesheet" href="./css/404.css" />
+    <link rel="stylesheet" href="./css/index.css" />
 
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Favicon flor-->
+
+    <link rel="icon" type="image/png" href="../assets/icons/favicons/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../assets/icons/favicons/favicon.svg" />
+    <link rel="shortcut icon" href="../assets/icons/favicons/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="M - Webapp" />
+    <link rel="manifest" href="../assets/icons/favicons/site.webmanifest" />
+
+    <!-- Aplico la TIPO x mediante el método <link> -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
 
 
+    <!-- Especifico el estilo de las diferentes partes de este documento HTML -->
+
+    <style>
+        body{
+            background-image: url("x");
+            background-size: cover;
+            font-family: 'la tipo que he especificado arriba', 'sans-serif';
+        }
+        main{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .header404{
+            font-family: 'Skranji';
+            font-size: 48px;
+        }
+        
+    </style>
 
 </head>
-
 <body>
+    <main>
+        
+        <h1 class="header404"> 404 </h1>
 
-    <div class="container-404" >
-            <p> Hola esto es una prueba de texto de párrafo</p>
+        <div class="content404">
+             ¡Vaya! Parece que no has encontrado lo que querías
     
         </div>
-    </div>
+        
+        <p>
+            <a href="https://marietamds.github.io/webapp/">Volver a la página principal</a>
+        </p>
+
+    </main>
     
 </body>
 </html>
+
