@@ -1,0 +1,19 @@
+.skranji-regular {
+    font-family: "Skranji", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .skranji-bold {
+    font-family: "Skranji", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .container-404 p {
+    font-family: "Skranji", system-ui;
+    font-size: 10px;
+    font-weight: 400;
+    font-style: normal;
+  }
+

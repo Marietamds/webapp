@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+
 /* Basic reset for consistent margins and paddings */
            
 * {
@@ -6,18 +9,23 @@
     box-sizing: border-box;
 }
 
+/* Uso de tipografía en el body mediante el método <link> */
+
 body {
-    font-family: Arial, sans-serif;
-    min-height: 100vh;
-    background-color: var(--background);
-    color: var(--foreground);
-    display: flex;
-    flex-direction: column; /* Arrange items in a column */
-    justify-content: center;
-    align-items: center;
+    font-family: "Skranji", system-ui;
+    font-weight: 400;
+    font-style: normal;
+      
 }
 
+/*  Uso de tipografía en el h2 mediante el método @font-face */
 
+h2 {
+    font-family: "Libre_Baskerville", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
 /*  When the body has display: flex;, 
     its children (header, footer, and main) become flex items. 
     Flex items do not expand to fill their container's width
@@ -51,6 +59,7 @@ footer div {
     text-align: center;
     display: block;
 }
+
 
 
 h1,
