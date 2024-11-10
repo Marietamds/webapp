@@ -1,28 +1,49 @@
-.skranji-regular {
-    font-family: "Skranji", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .skranji-bold {
-    font-family: "Skranji", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .container-404 p {
-    font-family: "Skranji", system-ui;
-    font-size: 10px;
-    font-weight: 400;
-    font-style: normal;
-  }
+/* 404.html -> Especifico el estilo de las diferentes partes del documento HTML 404.html */
 
+/* Centro el contenido de la página 404 en pantalla sin scroll */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100vh;          /* La altura completa de la pantalla */
+  overflow: hidden;       /* Evita el scroll */
+}
+
+/* Contenedores */
+
+.body404 {
+  height: 100vh;
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  overflow: hidden;
+  padding: 150px 0;
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 50px;
+  text-align: center;
+}   
+
+.header404 {
+  font-family: 'Skranji';
+  font-size: 80px;
+  text-align: center;
+ }
+
+.back-btn-404 {
+   font-family: 'Skranji';
+   font-size: 50px;
+   text-align: center;
+   margin-top: 20px;
+}
+
+/**/
   
 
-  .content404 {
-    font-family: "Pacifico", cursive;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 10px;
-  }
 

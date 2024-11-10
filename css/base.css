@@ -1,4 +1,22 @@
+/* Código de tipografías de Google Fonts u otros proveedores web -> Método @IMPORT */
+
 @import url('https://fonts.googleapis.com/css2?family=Skranji:wght@400;700&display=swap');
+
+/* Código de tipografías en uso en este repo */
+
+.skranji-regular {
+    font-family: "Skranji", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+.skranji-bold {
+    font-family: "Skranji", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+/**/
+
 
 
 /* Basic reset for consistent margins and paddings */
@@ -60,7 +78,7 @@ footer div {
     display: block;
 }
 
-
+/**/
 
 h1,
 h2,
