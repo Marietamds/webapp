@@ -1,45 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Simple CSS Grid Layout</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/meshgradient.css" />
 
-        <title>Simple CSS Grid Layout</title>
-        <link rel="stylesheet" href="./css/index.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="./assets/icons/favicons/favicon-48x48.png"
+      sizes="48x48"
+    />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./assets/icons/favicons/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./assets/icons/favicons/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/icons/favicons/apple-touch-icon.png"
+    />
+    <meta name="apple-mobile-web-app-title" content="M - Webapp" />
+    <link rel="manifest" href="./assets/icons/favicons/site.webmanifest" />
+  </head>
 
-        <link rel="icon" type="image/png" href="../assets/icons/favicons/favicon-48x48.png" sizes="48x48" />
-        <link rel="icon" type="image/svg+xml" href="../assets/icons/favicons/favicon.svg" />
-        <link rel="shortcut icon" href="../assets/icons/favicons/favicon.ico" />
-        <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicons/apple-touch-icon.png" />
-        <meta name="apple-mobile-web-app-title" content="M - Webapp" />
-        <link rel="manifest" href="../assets/icons/favicons/site.webmanifest" />
+  <!-- -->
 
+  <body>
+    <header>
+      <div class="logo">MARIETA</div>
+      <div class="nav-buttons">
+        <a href="#work">Work</a>
+        <a href="#info">Info</a>
+      </div>
+    </header>
 
+    <main style="padding: 50px 20px">
+      <div class="text-container">
+        <span class="greeting">Hi!</span>
+        <div class="main-text">
+          <span>& welcome to my portfolio</span>
+        </div>
+      </div>
+    </main>
 
-    </head>
+    <!-- FONDO DEGRADADO ANIMADO -->
 
-    <body>
+    <div class="absolute">
+      <div class="absolute inset-0 justify-center">
+        <div class="bg-shape1 bg-teal opacity-50 bg-blur"></div>
+        <div class="bg-shape2 bg-primary opacity-50 bg-blur"></div>
+        <div class="bg-shape1 bg-purple opacity-50 bg-blur"></div>
+      </div>
+      <div></div>
+    </div>
 
-        <!-- Header with Grid Layout -->
-        <header>
-            <div>Logo</div>
-            <div>Navigation</div>
-            <div>Search</div>
-        </header>
-
-        <!-- Main Content Area with Grid Layout -->
-        <main>
-           <p> PRUEBA </p>
-        </main>
-        <!-- Footer with Grid Layout -->
-        <footer>
-            <div>Contact Us</div>
-            <div>Privacy Policy</div>
-            <div>Follow Us</div>
-        </footer>
-
-    </body>
-
+    <!-- /FONDO DEGRADADO ANIMADO -->
+  </body>
 </html>
