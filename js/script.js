@@ -1,3 +1,0 @@
-// Animaciones
-
-//GSAP

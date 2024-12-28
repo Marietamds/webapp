@@ -12,6 +12,7 @@ body {
   justify-content: center;
   display: inline-flex;
   flex-direction: row;
+  z-index: 1;
 }
 
 .justify-center {
@@ -23,7 +24,7 @@ body {
   height: 800px;
   border-radius: 9999px;
   position: relative;
-  animation: one 15s infinite;
+  animation: one 10s linear infinite;
 }
 
 .bg-shape2 {
@@ -31,7 +32,7 @@ body {
   height: 500px;
   border-radius: 9999px;
   position: relative;
-  animation: two 15s infinite;
+  animation: two 10s linear infinite;
 }
 
 @keyframes one {
@@ -40,20 +41,20 @@ body {
     top: 0px;
   }
   25% {
-    left: -100px;
-    top: 70px;
+    left: -300px; /* Aumenta el desplazamiento horizontal */
+    top: 200px; /* Aumenta el desplazamiento vertical */
   }
   50% {
-    left: 20px;
-    top: 150px;
+    left: 200px; /* Desplazamiento opuesto */
+    top: 400px;
   }
   75% {
-    left: 50px;
-    top: 100px;
+    left: 500px;
+    top: -100px; /* Movimiento hacia arriba */
   }
   100% {
     left: 0px;
-    top: 0px;
+    top: 0px; /* Vuelve a la posición inicial */
   }
 }
 
@@ -63,20 +64,20 @@ body {
     top: 0px;
   }
   25% {
-    left: 50px;
-    top: 10px;
+    left: 300px; /* Mayor desplazamiento */
+    top: -150px; /* Movimiento hacia arriba */
   }
   50% {
-    left: 100px;
-    top: 50px;
+    left: -400px; /* Movimiento opuesto */
+    top: 300px;
   }
   75% {
-    left: 50px;
-    top: 100px;
+    left: -200px;
+    top: -200px;
   }
   100% {
     left: 0px;
-    top: 0px;
+    top: 0px; /* Vuelve a la posición inicial */
   }
 }
 
@@ -117,8 +118,4 @@ html {
 
 body {
   background-color: #f6f3ef; /* Cambia el color de fondo a un gris claro */
-}
-
-body {
-  background-image: url("/nnnoise.svg");
 }
