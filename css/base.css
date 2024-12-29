@@ -19,6 +19,17 @@
 
 /**/
 
+/* AJUSTES DE ETIQUETAS GENERALES */
+
+h2 {
+  font-size: 1.5 rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/**/
+
 /* HEADER -> Ajustes del navbar */
 
 header {
@@ -26,26 +37,24 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 20px;
+  padding: 40px 40px;
   align-items: center;
-  margin: 0;
+  margin-top: 20px;
   padding: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 .logo {
   font-size: 1.5rem;
-  font-weight: normal;
+  font-weight: bold !important;
   color: #8797a4;
   align-items: center;
   margin: 0;
-
-  mix-blend-mode: exclusion;
 }
 
 .logo a {
   text-decoration: none;
   color: #8797a4; /* Color del texto normal */
-  padding: 10px 15px;
+  padding: 0px 40px;
   border: 2px solid transparent;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -59,14 +68,15 @@ header {
 
 .nav-buttons {
   display: flex;
-  gap: 15px;
+  gap: 40px; /* Espacio entre los dos botones */
   box-sizing: border-box;
   font-weight: normal;
+  padding: 0px 40px;
 }
 .nav-buttons a {
   text-decoration: none;
   color: #8797a4; /* Color del texto normal */
-  padding: 10px 15px;
+
   border: 2px solid transparent;
   border-radius: 5px;
   transition: all 0.3s ease;
@@ -76,6 +86,14 @@ header {
 
 .nav-buttons a:hover {
   font-weight: bold; /* Cambia a negrita */
+}
+
+.info_button {
+  font-weight: bold !important;
+}
+
+.work_button {
+  font-weight: bold !important;
 }
 
 /**/
@@ -91,13 +109,13 @@ body {
   height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
 }
 
-main {
+.welcome {
   flex: 1;
   display: flex;
   position: relative;
   justify-content: center; /* Centrado horizontal */
   align-items: flex-end; /* Alineación al fondo */
-  padding: 0 20px; /* Margen horizontal */
+  padding: 50px 40px; /* Margen vetical y horizontal */
   margin-bottom: 0; /* Elimina cualquier margen adicional */
   mix-blend-mode: color-burn;
   z-index: 10;
@@ -119,3 +137,44 @@ main {
   font-size: 5rem;
   margin-bottom: 0; /* Sin márgenes adicionales para acercar al fondo */
 }
+
+/* INFO PAGE */
+
+.infopage {
+  height: 100vh; /* La altura completa de la pantalla */
+  overflow: hidden; /* Evita el scroll */
+}
+
+.info_text {
+  display: flex; /* Diseño de dos columnas */
+  justify-content: space-between; /* Separa las columnas horizontalmente */
+  align-items: flex-end; /* Alinea las columnas al borde inferior */
+  max-width: 1920px;
+  padding: 0 40px 40px; /* Margen inferior de 30px */
+  font-family: Arial, sans-serif;
+  color: #3c3c3c;
+  line-height: 1.5;
+  width: 100%; /* Ocupa todo el ancho */
+  height: 100vh; /* La altura completa de la pantalla */
+}
+
+.info_lefttext,
+.info_righttext {
+  width: 48%; /* Define el ancho de cada columna */
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-right: 40px;
+}
+
+.info_righttext ul {
+  list-style-type: none;
+  margin-bottom: 30px;
+  padding-left: 0;
+  margin: 0;
+}
+
+.info_righttext li {
+  margin-bottom: 10px;
+}
+
+/**/
