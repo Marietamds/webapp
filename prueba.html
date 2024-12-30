@@ -1,64 +1,88 @@
-<!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+<main>
+  <div class="projects-container">
+    <ul class="projects-list">
+      <li>
+        <p class="styled-text">
+          <span class="bold">O'LIVE</span
+          ><span> - ecologic branding &amp strategic</span>
+        </p>
+      </li>
+      <li>
+        <p class="styled-text">
+          <span class="bold">UN RATO MÁS</span>
+          <span> - branding of Zara summer '25 collection</span>
+        </p>
+      </li>
+      <li>
+        <p class="styled-text">
+          <span class="bold">RENDEZ-VOUS</span>
+          <span> - restaurant branding &amp UXUI</span>
+        </p>
+      </li>
+      <li>
+        <p class="styled-text">
+          <span class="bold">COVER OF THE COVER</span>
+          <span> - vinyl redesigns</span>
+        </p>
+      </li>
+      <li>
+        <p class="styled-text">
+          <span class="bold">BANDIDOS DEL AMOR</span>
+          <span> - band inspired illustrations</span>
+        </p>
+      </li>
+    </ul>
+  </div>
+</main>
 
-    <title>Marieta</title>
-    <link rel="stylesheet" href="prueba.css" />
-    <link rel="stylesheet" href="./css/index.css" />
+<!-- 
 
-    <!-- FAVICON /> -->
+.projects-container {
+  max-width: 1920px;
+  font-family: Arial, sans-serif;
+  color: #3c3c3c;
+  width: 100%;
+  height: 100vh; /* Ajusta la altura al contenido */
+  font-size: 1.5rem;
+  line-height: 1.5;
+  text-align: left;
+  padding: 40px;
+  box-sizing: border-box;
+}
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="./assets/icons/favicons/favicons_2/favicon-48x48.png"
-      sizes="48x48"
-    />
-    <link
-      rel="icon"
-      type="image/svg+xml"
-      href="./assets/icons/favicons/favicons_2/favicon.svg"
-    />
-    <link
-      rel="shortcut icon"
-      href="./assets/icons/favicons/favicons_2/favicon.ico"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="./assets/icons/favicons/favicons_2/apple-touch-icon.png"
-    />
-    <meta name="apple-mobile-web-app-title" content="M - Webapp" />
-    <link
-      rel="manifest"
-      href="./assets/icons/favicons/favicons_2/site.webmanifest"
-    />
-    <!-- /FAVICON -->
-  </head>
-  <body>
-    <header>
-      <div class="logo"><a href="./index.html">MARIETA</a></div>
-      <div class="nav-buttons">
-        <a href="./work.html">Work</a>
-        <a href="./info.html">Info</a>
-      </div>
-    </header>
-    <nav id="nav">
-      <a href="">
-        <span>O'LIVE</span>
-        <div class="img-wrapper">
-          <img src="./assets/images/cursorazul.png" alt="" />
-        </div>
-      </a>
-      <a href="">
-        <span>Rendez-vous</span>
-        <div class="img-wrapper">
-          <img src="./assets/images/cucu.png" alt="" />
-        </div>
-      </a>
-    </nav>
-  </body>
-</html>
+/* Lista que simula la tabla */
+.projects-list {
+  display: table; /* Hace que sea una tabla */
+  width: 100%;
+  border-collapse: collapse; /* Elimina espacios entre las celdas */
+  margin: 0;
+  padding: 0;
+}
+
+/* Cada fila de la "tabla" */
+.projects-list li {
+  display: table-row; /* Define las filas de la tabla */
+  border-bottom: 1.5px solid #ccc; /* Línea de separación entre filas */
+  border-left: 1.5px solid #ccc;
+  border-right: 1.5px solid #ccc;
+}
+
+/* El contenido de cada fila (celdas) */
+.styled-text {
+  display: table-cell; /* Hace que cada p se comporte como una celda de la tabla */
+  padding: 10px 20px;
+  vertical-align: middle; /* Centra verticalmente el texto en cada fila */
+}
+
+/* Negrita para los elementos en mayúsculas */
+.styled-text .bold {
+  font-weight: bold;
+}
+
+.projects-list li:first-child {
+  border-top: 1.5px solid #ccc; /* Línea superior */
+}
+
+/**/
+
+-->
