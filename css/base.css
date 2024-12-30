@@ -190,4 +190,98 @@ body {
   height: 100vh; /* La altura completa de la pantalla */
   overflow: hidden; /* Evita el scroll */
   background-color: #f6f3ef;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container Styles */
+.container {
+  display: grid;
+  grid-template-areas:
+    "olive"
+    "rendezvous"
+    "cover"
+    "bandidos";
+
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Altura completa */
+  gap: 0;
+  text-align: right;
+  justify-items: start; /* Alinea los ítems a la izquierda */
+  align-items: start; /* Alinea los ítems al principio de la fila */
+  margin-left: 0px;
+}
+
+/* Item Styles */
+.item {
+  font-weight: bold;
+  gap: 0;
+}
+
+.item h2 {
+  margin: 0;
+  color: #4a4a4a;
+  font-size: 3rem;
+}
+
+.item p {
+  font-size: 1rem;
+  margin: 8px 0 0;
+  color: #7a7a7a;
+  text-align: left;
+}
+
+/* Specific Positioning */
+.item1 {
+  grid-area: olive;
+  font-size: 1.8rem;
+  align-self: center; /* Alinear verticalmente */
+  justify-self: baseline; /* Alinear horizontalmente */
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item2 {
+  grid-area: rendezvous;
+  font-size: 1.6rem;
+  margin-left: 20px; /* Ajusta para posición */
+  align-self: center; /* Alinear verticalmente */
+  justify-self: baseline; /* Alinear horizontalmente */
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item3 {
+  grid-area: cover;
+  font-size: 2rem;
+  margin-left: 40px;
+  align-self: center; /* Alinear verticalmente */
+  justify-self: baseline; /* Alinear horizontalmente */
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.item4 {
+  grid-area: bandidos;
+  font-size: 1.7rem;
+  margin-left: 10px;
+  align-self: center; /* Alinear verticalmente */
+  justify-self: baseline; /* Alinear horizontalmente */
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+* {
+  box-sizing: border-box;
 }
