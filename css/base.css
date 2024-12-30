@@ -4,6 +4,10 @@
 
 /* Usar un cursor personalizado con una imagen */
 
+html {
+  cursor: url("../assets/images/cursorazul.png"), auto;
+}
+
 /**/
 
 .skranji-regular {
