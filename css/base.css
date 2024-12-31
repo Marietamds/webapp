@@ -109,7 +109,7 @@ body {
   font-family: Arial, sans-serif;
   display: flex;
   flex-direction: column;
-  color: #7b7b7b;
+  color: #4a4a4a;
   height: 100vh; /* Asegura que el body ocupe todo el alto de la pantalla */
 }
 
@@ -157,7 +157,7 @@ body {
   max-width: 1920px;
   padding: 0 40px 40px; /* Margen inferior de 30px */
   font-family: Arial, sans-serif;
-  color: #3c3c3c;
+  color: #4a4a4a;
   line-height: 1.5;
   width: 100%; /* Ocupa todo el ancho */
   height: 100vh; /* La altura completa de la pantalla */
@@ -184,7 +184,7 @@ body {
 
 /**/
 
-/* WORK PAGE prueba */
+/* WORK PAGE */
 
 .workpage {
   height: 100vh; /* La altura completa de la pantalla */
@@ -193,26 +193,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-/* Container Styles 
-.container {
-  display: grid;
-  grid-template-areas:
-    "olive"
-    "rendezvous"
-    "cover"
-    "bandidos";
-
-  width: 100%; 
-  height: 100%; 
-  gap: 0;
-  text-align: right;
-  justify-items: start; 
-  align-items: start; 
-  margin-left: 0px;
-}
-
-*/
 
 .container {
   width: 100%;
@@ -227,22 +207,18 @@ body {
   box-sizing: border-box; /* Ajustar dimensiones correctamente */
 }
 
-/* Item Styles */
-.item {
-  font-weight: bold;
-  gap: 0;
-}
+/* estilos de cada Item */
 
 .item h2 {
   margin: 0;
-  color: #4a4a4a;
+
   font-size: 4.5rem;
   margin-bottom: 10px;
 }
 
 .item h6 {
   margin: 0;
-  color: #4a4a4a;
+
   font-size: 1.7rem;
   margin: 8px 0 0;
   text-align: left;
@@ -250,60 +226,189 @@ body {
 
 .item p {
   font-size: 1rem;
-  margin: 8px 0 0;
-  color: #7a7a7a;
+  margin: 10px 0 0;
+  color: #4a4a4a;
   text-align: left;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
-/* Specific Positioning */
+/* posicionamiento y organización de cada Item (apartado) del índice */
+
 .item1 {
-  grid-area: olive;
+  color: #4a4a4a;
   font-size: 1.8rem;
   align-self: center; /* Alinear verticalmente */
-  justify-self: baseline; /* Alinear horizontalmente */
+  justify-self: end; /* Alinear horizontalmente */
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
-  margin-left: 160px;
+  margin-right: 320px;
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 .item2 {
-  grid-area: rendezvous;
+  color: #4a4a4a;
   font-size: 1.6rem;
-  margin-left: 80px; /* Ajusta para posición */
+  margin-right: 80px; /* Ajusta para posición */
   align-self: center; /* Alinear verticalmente */
-  justify-self: baseline; /* Alinear horizontalmente */
+  justify-self: end; /* Alinear horizontalmente */
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 .item3 {
-  grid-area: cover;
+  color: #4a4a4a;
   font-size: 2rem;
-  margin-left: 240px;
+  margin-right: 105px;
   align-self: center; /* Alinear verticalmente */
-  justify-self: baseline; /* Alinear horizontalmente */
+  justify-self: end; /* Alinear horizontalmente */
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 .item4 {
-  grid-area: bandidos;
+  color: #4a4a4a;
   font-size: 1.7rem;
-  margin-left: 0px;
+  margin-right: 100px;
   align-self: center; /* Alinear verticalmente */
-  justify-self: baseline; /* Alinear horizontalmente */
+  justify-self: end; /* Alinear horizontalmente */
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
+  transition: color 0.3s ease; /* Transición suave */
 }
 
 * {
   box-sizing: border-box;
+}
+
+/* efecto cambio de color while HOVERING */
+
+.item1:hover h2,
+.item1:hover p {
+  color: #8797a4; /* Color cuando el ratón está encima */
+}
+
+.item2:hover h2,
+.item2:hover p {
+  color: #8797a4; /* Color cuando el ratón está encima */
+}
+
+.item3:hover h2,
+.item3:hover h6,
+.item3:hover p {
+  color: #8797a4; /* Color cuando el ratón está encima */
+}
+
+.item4:hover h2,
+.item4:hover h6,
+.item4:hover p {
+  color: #8797a4; /* Color cuando el ratón está encima */
+}
+
+/* ajustes del link y su anulación de efecto */
+
+.item-link {
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Mantiene el color heredado */
+  display: block; /* Permite que el enlace abarque todo el contenido */
+  position: relative; /* Esto permite manipular el área de clic sin afectar el layout */
+  z-index: 1; /* Asegura que esté por encima de otros elementos */
+}
+
+.item-link:after {
+  content: ""; /* Crea un elemento invisible después del texto */
+  position: absolute;
+  top: -10px; /* Extiende el área hacia arriba */
+  bottom: -10px; /* Extiende el área hacia abajo */
+  left: -10px; /* Extiende el área hacia la izquierda */
+  right: -10px; /* Extiende el área hacia la derecha */
+  z-index: -1; /* Coloca el área extendida detrás del texto */
+}
+
+/**/
+
+/* Tablet: Landscape (768px to 1024px) */
+@media (max-width: 1024px) {
+  .item h2 {
+    font-size: 3.5rem; /* Reduce the font size proportionally */
+  }
+
+  .item h6 {
+    font-size: 1.5rem;
+  }
+
+  .item p {
+    font-size: 0.9rem;
+  }
+
+  .item1 {
+    font-size: 1.6rem; /* Reduce item font size proportionally */
+  }
+
+  .item2 {
+    font-size: 1.4rem;
+  }
+
+  .item3 {
+    font-size: 1.8rem;
+  }
+
+  .item4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Mobile: Portrait (up to 767px) */
+@media (max-width: 767px) {
+  .item h2 {
+    font-size: 2.2rem; /* More reduced size for smaller screens */
+  }
+
+  .item h6 {
+    font-size: 1.1rem; /* Even smaller size for mobile */
+  }
+
+  .item p {
+    font-size: 0.75rem; /* Small text size for mobile */
+  }
+
+  .item1 {
+    font-size: 1.2rem; /* Further reduce item font size */
+    margin-right: 120px;
+  }
+
+  .item2 {
+    font-size: 1rem;
+  }
+
+  .item3 {
+    font-size: 1.4rem;
+  }
+
+  .item4 {
+    font-size: 1.3rem;
+  }
+
+  /* Adjust gap and margins for mobile */
+  .container {
+    margin-left: 20px; /* Reduce margin for smaller screens */
+    margin-bottom: 40px; /* Reduce bottom margin */
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    gap: 10px; /* Reduce gap between items */
+  }
 }
