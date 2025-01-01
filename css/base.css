@@ -43,10 +43,15 @@ header {
   align-items: center;
   padding: 40px 40px;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 30px;
   padding: 0;
   font-size: 1.5rem;
   font-family: Arial, Helvetica, sans-serif;
+
+  position: fixed; /* Fijar el header en la parte superior */
+  top: 0; /* Asegura que esté en la parte superior de la pantalla */
+  left: 0; /* Alinea el header al margen izquierdo */
+  z-index: 1000; /* Asegura que el header esté encima de otros elementos */
 }
 .logo {
   font-weight: bold !important;
@@ -97,6 +102,10 @@ header {
 }
 
 .work_button {
+  font-weight: bold !important;
+}
+
+.contact_button {
   font-weight: bold !important;
 }
 
@@ -203,6 +212,7 @@ body {
   left: 0; /* Pegar al margen izquierdo */
   margin-bottom: 80px; /* Eliminar márgenes adicionales */
   margin-left: 40px;
+  margin-right: 40px;
   padding: 0; /* Asegurar que no haya relleno */
   box-sizing: border-box; /* Ajustar dimensiones correctamente */
 }
@@ -230,7 +240,6 @@ body {
   color: #4a4a4a;
   text-align: left;
   font-weight: normal;
-  text-transform: uppercase;
 }
 
 /* posicionamiento y organización de cada Item (apartado) del índice */
@@ -251,7 +260,7 @@ body {
 .item2 {
   color: #4a4a4a;
   font-size: 1.6rem;
-  margin-right: 80px; /* Ajusta para posición */
+  margin-right: 82px; /* Ajusta para posición */
   align-self: center; /* Alinear verticalmente */
   justify-self: end; /* Alinear horizontalmente */
   display: flex;
@@ -335,6 +344,14 @@ body {
   z-index: -1; /* Coloca el área extendida detrás del texto */
 }
 
+.desktop-only {
+  display: inline; /* Mostrar normalmente en pantallas grandes */
+}
+
+.tablet-only {
+  display: none; /* Ocultar en pantallas grandes */
+}
+
 /**/
 
 /* Tablet: Landscape (768px to 1024px) */
@@ -344,7 +361,7 @@ body {
   }
 
   .item h6 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .item p {
@@ -353,6 +370,7 @@ body {
 
   .item1 {
     font-size: 1.6rem; /* Reduce item font size proportionally */
+    margin-right: 280px;
   }
 
   .item2 {
@@ -366,6 +384,20 @@ body {
   .item4 {
     font-size: 1.5rem;
   }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .desktop-only {
+    display: inline;
+  }
+  .tablet-only {
+    display: none;
+  }
 }
 
 /* Mobile: Portrait (up to 767px) */
@@ -375,11 +407,13 @@ body {
   }
 
   .item h6 {
-    font-size: 1.1rem; /* Even smaller size for mobile */
+    font-size: 0.8rem; /* Even smaller size for mobile */
+    margin: 6px 0 0;
   }
 
   .item p {
     font-size: 0.75rem; /* Small text size for mobile */
+    margin: 6px 0 0;
   }
 
   .item1 {
@@ -397,6 +431,7 @@ body {
 
   .item4 {
     font-size: 1.3rem;
+    margin-right: 100px;
   }
 
   /* Adjust gap and margins for mobile */
@@ -410,5 +445,191 @@ body {
   .item3,
   .item4 {
     gap: 10px; /* Reduce gap between items */
+  }
+
+  .desktop-only {
+    display: none;
+  }
+  .tablet-only {
+    display: inline;
+    font-size: 0.8rem; /* Even smaller size for mobile */
+    margin: 6px 0 0;
+    line-height: 1.2;
+    text-align: left;
+  }
+}
+
+/* O'LIVE WORK PAGE */
+
+.olive_page {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f3ef;
+  color: #4a4a4a;
+}
+
+.main-content {
+  padding: 70px 40px 40px; /* Space below the fixed header */
+}
+
+.intro-section {
+  display: flex; /* Activa el diseño en fila */
+  justify-content: space-between; /* Deja espacio entre el texto principal y los detalles */
+  align-items: flex-start; /* Alinea los elementos desde arriba */
+  gap: 20px; /* Espacio entre los bloques */
+  margin: 0 auto; /* Centra la sección */
+  position: relative; /* Para manipular la posición de la línea */
+}
+
+.intro-main-text {
+  flex: 3; /* Ocupa más espacio que los detalles */
+}
+
+.vertical-line {
+  width: 2px; /* Grosor de la línea */
+  background-color: #8797a4; /* Color de la línea */
+  position: absolute; /* Coloca la línea entre los textos */
+  left: 70%; /* Posiciona la línea entre los dos bloques */
+  bottom: 0;
+  min-height: 70%;
+}
+
+.intro-details {
+  flex: 1; /* Ocupa menos espacio */
+
+  text-align: left; /* Alinea el texto a la izquierda */
+  font-size: 0.9rem; /* Tamaño más pequeño para los detalles */
+  line-height: 1.4; /* Espaciado entre líneas */
+  margin-top: auto; /* Asegura que se alinee con la última línea del texto principal */
+  margin-left: 175px;
+
+  position: relative; /* Para poder manipular la línea */
+}
+
+/**/
+
+/* Asegura que la línea tenga una altura igual a la de los detalles */
+.intro-details {
+  position: relative;
+}
+
+.intro-main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Main Content */
+
+.intro-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.intro-section p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 10px;
+
+  text-align: left; /* Justifica el texto */
+}
+
+.details {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  color: #8797a4;
+}
+
+.image-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.image-section .main-image {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: 2px solid #8797a4; /* Borde de 4px de grosor con color #8797a4 */
+  border-radius: 10px; /* Bordes redondeados (opcional) */
+  margin-bottom: 20px;
+}
+
+/* Navigation Buttons */
+.navigation {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.nav-button {
+  font-size: 1rem; /* Mantén el tamaño del texto igual */
+  color: #8797a4;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  transition: color 0.3s ease, font-weight 0.3s ease; /* Transición suave para el color y el grosor */
+  text-transform: uppercase;
+  display: flex; /* Usar flexbox para alinear el contenido */
+  align-items: center; /* Centra la flecha y el texto verticalmente */
+}
+
+.nav-button:hover {
+  background: none; /* Elimina el fondo oscuro */
+  color: #8797a4; /* Mantiene el color actual */
+  font-weight: bold; /* Solo pone el texto en negrita */
+}
+
+.nav-button:focus {
+  outline: none;
+}
+
+/* Estilos para las flechas */
+.nav-button.prev::before {
+  content: "←"; /* Flecha izquierda */
+  font-size: 1.5rem; /* Tamaño más grande para la flecha */
+  margin-right: 10px; /* Espacio entre la flecha y el texto */
+  line-height: 1; /* Asegura que no haya desajuste de altura */
+  margin-bottom: 3px;
+}
+
+.nav-button.next::after {
+  content: "→"; /* Flecha derecha */
+  font-size: 1.5rem; /* Tamaño más grande para la flecha */
+  margin-left: 10px; /* Espacio entre el texto y la flecha */
+  line-height: 1; /* Asegura que no haya desajuste de altura */
+  margin-bottom: 3px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav a {
+    font-size: 0.9rem;
+  }
+
+  .intro-section h1 {
+    font-size: 1.5rem;
+  }
+
+  .intro-section p {
+    font-size: 0.9rem;
+    max-width: 80%; /* Ajusta el texto a un ancho mayor en móvil */
+  }
+
+  .image-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .nav-button {
+    font-size: 0.9rem;
   }
 }
