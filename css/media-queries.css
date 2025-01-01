@@ -4,48 +4,72 @@
   https://www.w3.org/TR/mediaqueries-3/
 */
 
+/* Media Queries del HEADER */
 
+@media (max-width: 768px) {
+  /* Para dispositivos móviles o los más pequeños */
+  header {
+    font-size: 1.3rem; /* Reduce el tamaño del texto */
+    padding: 20px 20px; /* Reduce el padding general en móvil */
+  }
 
+  .nav-buttons {
+    gap: 20px; /* Reduce el espacio entre los botones */
+  }
 
-  /* Mobile Portrait */
-  @media only screen and (max-width: 600px) and (orientation: portrait) {
-    body {
-      font-size: 1rem;
-    }
+  .nav-buttons a {
+    font-size: 1.3rem; /* Ajusta el tamaño del texto en los enlaces */
   }
-  
-  /* Mobile Landscape */
-  @media only screen and (max-width: 800px) and (orientation: landscape) {
-    body {
-      font-size: 1.2rem;
-    }
+
+  .logo {
+    font-size: 1.3rem; /* Ajusta el tamaño de la marca/logo */
   }
-  
-  /* Tablet Portrait */
-  @media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
-    body {
-      font-size: 1.4rem;
-    }
+
+  .logo a {
+    padding: 0px 20px; /* Ajusta el margen interno del logo */
   }
-  
-  /* Tablet Landscape */
-  @media only screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
-    body {
-      font-size: 1.6rem;
-    }
+}
+
+/**/
+
+/* Mobile Portrait */
+@media only screen and (max-width: 600px) and (orientation: portrait) {
+  body {
+    font-size: 1rem;
   }
-  
-  /* Small Desktop */
-  @media only screen and (min-width: 1201px) and (max-width: 1600px) {
-    body {
-      font-size: 1.8rem;
-    }
+}
+
+/* Mobile Landscape */
+@media only screen and (max-width: 800px) and (orientation: landscape) {
+  body {
+    font-size: 1.2rem;
   }
-  
-  /* Large Desktop */
-  @media only screen and (min-width: 1601px) {
-    body {
-      font-size: 2rem;
-    }
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 601px) and (max-width: 900px) and (orientation: portrait) {
+  body {
+    font-size: 1.4rem;
   }
-  
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 801px) and (max-width: 1200px) and (orientation: landscape) {
+  body {
+    font-size: 1.6rem;
+  }
+}
+
+/* Small Desktop */
+@media only screen and (min-width: 1201px) and (max-width: 1600px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+/* Large Desktop */
+@media only screen and (min-width: 1601px) {
+  body {
+    font-size: 2rem;
+  }
+}

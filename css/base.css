@@ -41,7 +41,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 40px;
+  padding: 0px 40px;
   align-items: center;
   margin-top: 30px;
   padding: 0;
@@ -53,6 +53,7 @@ header {
   left: 0; /* Alinea el header al margen izquierdo */
   z-index: 1000; /* Asegura que el header esté encima de otros elementos */
 }
+
 .logo {
   font-weight: bold !important;
   color: #8797a4;
