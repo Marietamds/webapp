@@ -5,7 +5,15 @@
 /* Usar un cursor personalizado con una imagen */
 
 html {
-  cursor: url("../assets/images/cursorazul.png"), auto;
+  cursor: url("../assets/icons/cursor/cursornormal.png"), auto;
+}
+
+/* Cursor para elementos interactivos: enlaces y botones */
+a,
+button,
+[role="button"],
+.nav-buttons a {
+  cursor: url("../assets/icons/cursor/cursormano.png"), pointer;
 }
 
 /**/
@@ -171,6 +179,22 @@ body {
   line-height: 1.5;
   width: 100%; /* Ocupa todo el ancho */
   height: 100vh; /* La altura completa de la pantalla */
+}
+
+.info_lefttext {
+  display: flex; /* Permite colocar elementos en fila o columna */
+  flex-direction: column; /* Alinea elementos en columna */
+  align-items: flex-end; /* Alinea a la izquierda por defecto */
+  position: relative; /* Permite posicionar elementos hijos relativamente */
+}
+
+.info_lefttext .cuadrada {
+  width: 300px; /* Tamaño de la imagen */
+  height: 300px; /* Tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen no se deforme */
+  float: right; /* Pega la imagen al margen derecho */
+  margin-left: 0px; /* Añade un pequeño espacio entre la imagen y el texto */
+  margin-bottom: 0px; /* Ajusta la separación inferior si es necesario */
 }
 
 .info_lefttext,
@@ -550,9 +574,41 @@ body {
 .image-section .main-image {
   max-width: 100%;
   height: auto; /* Mantiene la proporción de la imagen */
-  border: 2px solid #8797a4; /* Borde de 4px de grosor con color #8797a4 */
+  border: 2px solid #4a4a4a; /* Borde de 4px de grosor con color #8797a4 */
   border-radius: 10px; /* Bordes redondeados (opcional) */
   margin-bottom: 20px;
+}
+
+.noborder-image {
+  max-width: 100%;
+  height: auto; /* Mantiene la proporción de la imagen */
+  border: transparent;
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.video-section {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.video-section .main-video {
+  max-width: 100%; /* El vídeo se adapta al contenedor */
+  height: auto; /* Mantiene la proporción original */
+  border: 2px solid #4a4a4a; /* Opcional: borde */
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.noborder-video {
+  max-width: 100%; /* El vídeo se adapta al contenedor */
+  height: auto; /* Mantiene la proporción original */
+  border: transparent;
+  border-radius: 10px; /* Bordes redondeados */
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 /* Navigation Buttons */
