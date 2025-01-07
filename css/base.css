@@ -621,7 +621,7 @@ body {
   padding: 0 40px;
 }
 
-.nav-button {
+.button {
   font-size: 1rem; /* Mantén el tamaño del texto igual */
   color: #8797a4;
   background: none;
@@ -632,20 +632,21 @@ body {
   text-transform: uppercase;
   display: flex; /* Usar flexbox para alinear el contenido */
   align-items: center; /* Centra la flecha y el texto verticalmente */
+  text-decoration: none;
 }
 
-.nav-button:hover {
+.button:hover {
   background: none; /* Elimina el fondo oscuro */
   color: #8797a4; /* Mantiene el color actual */
   font-weight: bold; /* Solo pone el texto en negrita */
 }
 
-.nav-button:focus {
+.button:focus {
   outline: none;
 }
 
 /* Estilos para las flechas */
-.nav-button.prev::before {
+.button.prev::before {
   content: "←"; /* Flecha izquierda */
   font-size: 1.5rem; /* Tamaño más grande para la flecha */
   margin-right: 10px; /* Espacio entre la flecha y el texto */
@@ -653,7 +654,7 @@ body {
   margin-bottom: 3px;
 }
 
-.nav-button.next::after {
+.button.next::after {
   content: "→"; /* Flecha derecha */
   font-size: 1.5rem; /* Tamaño más grande para la flecha */
   margin-left: 10px; /* Espacio entre el texto y la flecha */
