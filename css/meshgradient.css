@@ -89,15 +89,15 @@ body {
   filter: blur(90px);
 }
 
-.bg-primary {
+.bg-2 {
   background-color: #46c4dd;
 }
 
-.bg-teal {
+.bg-1 {
   background-color: rgb(0, 174, 255);
 }
 
-.bg-purple {
+.bg-3 {
   background-color: rgb(93, 206, 228);
 }
 

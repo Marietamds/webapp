@@ -57,9 +57,9 @@ header {
   font-family: Arial, Helvetica, sans-serif;
 
   position: fixed; /* Fijar el header en la parte superior */
-  top: 0; /* Asegura que esté en la parte superior de la pantalla */
-  left: 0; /* Alinea el header al margen izquierdo */
-  z-index: 1000; /* Asegura que el header esté encima de otros elementos */
+  top: 0;
+  left: 0;
+  z-index: 1000;
 }
 
 .logo {
@@ -71,7 +71,7 @@ header {
 
 .logo a {
   text-decoration: none;
-  color: #8797a4; /* Color del texto normal */
+  color: #8797a4;
   padding: 0px 40px;
   border: 2px solid transparent;
   border-radius: 5px;
@@ -81,19 +81,19 @@ header {
 }
 
 .logo a:hover {
-  font-weight: bold; /* Cambia a negrita */
+  font-weight: bold;
 }
 
 .nav-buttons {
   display: flex;
-  gap: 40px; /* Espacio entre los dos botones */
+  gap: 40px;
   box-sizing: border-box;
   font-weight: normal;
   padding: 0px 40px;
 }
 .nav-buttons a {
   text-decoration: none;
-  color: #8797a4; /* Color del texto normal */
+  color: #8797a4;
 
   border: 2px solid transparent;
   border-radius: 5px;
@@ -103,7 +103,7 @@ header {
 }
 
 .nav-buttons a:hover {
-  font-weight: bold; /* Cambia a negrita */
+  font-weight: bold;
 }
 
 .info_button {
@@ -135,35 +135,35 @@ body {
   flex: 1;
   display: flex;
   position: relative;
-  justify-content: center; /* Centrado horizontal */
-  align-items: flex-end; /* Alineación al fondo */
-  padding: 50px 40px; /* Margen vetical y horizontal */
-  margin-bottom: 0; /* Elimina cualquier margen adicional */
+  justify-content: center;
+  align-items: flex-end;
+  padding: 50px 40px;
+  margin-bottom: 0;
   mix-blend-mode: color-burn;
   z-index: 10;
 }
 
 .text-container {
   display: grid;
-  gap: 20px; /* Espaciado entre las columnas */
+  gap: 20px;
   font-size: 4rem;
   font-weight: 400;
-  width: 100%; /* Extiende en todo el ancho */
+  width: 100%;
   line-height: 1;
   flex-direction: column;
 }
 
 .text-container .greeting {
   grid-column: 1 / -1; /* La palabra "Hi!" ocupa todo el ancho */
-  text-align: left; /* Alineada a la izquierda */
+  text-align: left;
   font-size: 5rem;
-  margin-bottom: 0; /* Sin márgenes adicionales para acercar al fondo */
+  margin-bottom: 0;
 }
 
 /* INFO PAGE */
 
 .infopage {
-  height: 100vh; /* La altura completa de la pantalla */
+  height: 100vh;
 
   background-color: #f6f3ef;
 }
@@ -173,12 +173,12 @@ body {
   justify-content: space-between; /* Separa las columnas horizontalmente */
   align-items: flex-end; /* Alinea las columnas al borde inferior */
   max-width: 1920px;
-  padding: 0 40px 40px; /* Margen inferior de 30px */
+  padding: 0 40px 40px;
   font-family: Arial, sans-serif;
   color: #4a4a4a;
   line-height: 1.5;
-  width: 100%; /* Ocupa todo el ancho */
-  height: 100vh; /* La altura completa de la pantalla */
+  width: 100%;
+  height: 100vh;
 }
 
 .info_lefttext {
@@ -189,17 +189,17 @@ body {
 }
 
 .info_lefttext .cuadrada {
-  width: 300px; /* Tamaño de la imagen */
-  height: 300px; /* Tamaño de la imagen */
+  width: 300px;
+  height: 300px;
   object-fit: cover; /* Asegura que la imagen no se deforme */
-  float: right; /* Pega la imagen al margen derecho */
-  margin-left: 0px; /* Añade un pequeño espacio entre la imagen y el texto */
-  margin-bottom: 0px; /* Ajusta la separación inferior si es necesario */
+  float: right;
+  margin-left: 0px;
+  margin-bottom: 0px;
 }
 
 .info_lefttext,
 .info_righttext {
-  width: 47%; /* Define el ancho de cada columna */
+  width: 47%;
   font-size: 1rem;
   line-height: 1.5;
   margin-left: 4px;
@@ -221,8 +221,8 @@ body {
 /* WORK PAGE */
 
 .workpage {
-  height: 100vh; /* La altura completa de la pantalla */
-  overflow: hidden; /* Evita el scroll */
+  height: 100vh;
+  overflow: hidden;
   background-color: #f6f3ef;
   margin: 0;
   padding: 0;
@@ -230,16 +230,16 @@ body {
 
 .container {
   width: 100%;
-  height: auto; /* Ajustar altura al contenido, si es necesario */
+  height: auto;
   text-align: right;
-  position: absolute; /* Usar posicionamiento absoluto */
-  bottom: 0; /* Pegar al margen inferior */
-  left: 0; /* Pegar al margen izquierdo */
-  margin-bottom: 80px; /* Eliminar márgenes adicionales */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 80px;
   margin-left: 40px;
   margin-right: 40px;
-  padding: 0; /* Asegurar que no haya relleno */
-  box-sizing: border-box; /* Ajustar dimensiones correctamente */
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /* estilos de cada Item */
@@ -272,53 +272,53 @@ body {
 .item1 {
   color: #4a4a4a;
   font-size: 1.8rem;
-  align-self: center; /* Alinear verticalmente */
-  justify-self: end; /* Alinear horizontalmente */
+  align-self: center;
+  justify-self: end;
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
   margin-right: 320px;
-  transition: color 0.3s ease; /* Transición suave */
+  transition: color 0.3s ease;
 }
 
 .item2 {
   color: #4a4a4a;
   font-size: 1.6rem;
-  margin-right: 82px; /* Ajusta para posición */
-  align-self: center; /* Alinear verticalmente */
-  justify-self: end; /* Alinear horizontalmente */
+  margin-right: 82px;
+  align-self: center;
+  justify-self: end;
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
-  transition: color 0.3s ease; /* Transición suave */
+  transition: color 0.3s ease;
 }
 
 .item3 {
   color: #4a4a4a;
   font-size: 2rem;
   margin-right: 105px;
-  align-self: center; /* Alinear verticalmente */
-  justify-self: end; /* Alinear horizontalmente */
+  align-self: center;
+  justify-self: end;
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
-  transition: color 0.3s ease; /* Transición suave */
+  transition: color 0.3s ease;
 }
 
 .item4 {
   color: #4a4a4a;
   font-size: 1.7rem;
   margin-right: 100px;
-  align-self: center; /* Alinear verticalmente */
-  justify-self: end; /* Alinear horizontalmente */
+  align-self: center;
+  justify-self: end;
   display: flex;
   gap: 20px;
   flex-direction: row;
   justify-content: space-around;
-  transition: color 0.3s ease; /* Transición suave */
+  transition: color 0.3s ease;
 }
 
 * {
@@ -329,44 +329,44 @@ body {
 
 .item1:hover h2,
 .item1:hover p {
-  color: #8797a4; /* Color cuando el ratón está encima */
+  color: #8797a4;
 }
 
 .item2:hover h2,
 .item2:hover p {
-  color: #8797a4; /* Color cuando el ratón está encima */
+  color: #8797a4;
 }
 
 .item3:hover h2,
 .item3:hover h6,
 .item3:hover p {
-  color: #8797a4; /* Color cuando el ratón está encima */
+  color: #8797a4;
 }
 
 .item4:hover h2,
 .item4:hover h6,
 .item4:hover p {
-  color: #8797a4; /* Color cuando el ratón está encima */
+  color: #8797a4;
 }
 
 /* ajustes del link y su anulación de efecto */
 
 .item-link {
   text-decoration: none; /* Elimina el subrayado */
-  color: inherit; /* Mantiene el color heredado */
-  display: block; /* Permite que el enlace abarque todo el contenido */
-  position: relative; /* Esto permite manipular el área de clic sin afectar el layout */
+  color: inherit;
+  display: block;
+  position: relative;
   z-index: 1; /* Asegura que esté por encima de otros elementos */
 }
 
 .item-link:after {
-  content: ""; /* Crea un elemento invisible después del texto */
+  content: "";
   position: absolute;
-  top: -10px; /* Extiende el área hacia arriba */
-  bottom: -10px; /* Extiende el área hacia abajo */
-  left: -10px; /* Extiende el área hacia la izquierda */
-  right: -10px; /* Extiende el área hacia la derecha */
-  z-index: -1; /* Coloca el área extendida detrás del texto */
+  top: -10px;
+  bottom: -10px;
+  left: -10px;
+  right: -10px;
+  z-index: -1;
 }
 
 .desktop-only {
@@ -379,114 +379,9 @@ body {
 
 /**/
 
-/* Tablet: Landscape (768px to 1024px) */
-@media (max-width: 1024px) {
-  .item h2 {
-    font-size: 3.5rem; /* Reduce the font size proportionally */
-  }
+/* PROJECTS WORK PAGE */
 
-  .item h6 {
-    font-size: 1.3rem;
-  }
-
-  .item p {
-    font-size: 0.9rem;
-  }
-
-  .item1 {
-    font-size: 1.6rem; /* Reduce item font size proportionally */
-    margin-right: 280px;
-  }
-
-  .item2 {
-    font-size: 1.4rem;
-  }
-
-  .item3 {
-    font-size: 1.8rem;
-  }
-
-  .item4 {
-    font-size: 1.5rem;
-  }
-
-  .item1,
-  .item2,
-  .item3,
-  .item4 {
-    gap: 15px; /* Reduce gap between items */
-  }
-
-  .desktop-only {
-    display: inline;
-  }
-  .tablet-only {
-    display: none;
-  }
-}
-
-/* Mobile: Portrait (up to 767px) */
-@media (max-width: 767px) {
-  .item h2 {
-    font-size: 2.2rem; /* More reduced size for smaller screens */
-  }
-
-  .item h6 {
-    font-size: 0.8rem; /* Even smaller size for mobile */
-    margin: 6px 0 0;
-  }
-
-  .item p {
-    font-size: 0.75rem; /* Small text size for mobile */
-    margin: 6px 0 0;
-  }
-
-  .item1 {
-    font-size: 1.2rem; /* Further reduce item font size */
-    margin-right: 120px;
-  }
-
-  .item2 {
-    font-size: 1rem;
-  }
-
-  .item3 {
-    font-size: 1.4rem;
-  }
-
-  .item4 {
-    font-size: 1.3rem;
-    margin-right: 100px;
-  }
-
-  /* Adjust gap and margins for mobile */
-  .container {
-    margin-left: 20px; /* Reduce margin for smaller screens */
-    margin-bottom: 40px; /* Reduce bottom margin */
-  }
-
-  .item1,
-  .item2,
-  .item3,
-  .item4 {
-    gap: 10px; /* Reduce gap between items */
-  }
-
-  .desktop-only {
-    display: none;
-  }
-  .tablet-only {
-    display: inline;
-    font-size: 0.8rem; /* Even smaller size for mobile */
-    margin: 6px 0 0;
-    line-height: 1.2;
-    text-align: left;
-  }
-}
-
-/* O'LIVE WORK PAGE */
-
-.olive_page {
+.projects_page {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -495,41 +390,41 @@ body {
 }
 
 .main-content {
-  padding: 70px 40px 40px; /* Space below the fixed header */
+  padding: 70px 40px 40px;
 }
 
 .intro-section {
-  display: flex; /* Activa el diseño en fila */
-  justify-content: space-between; /* Deja espacio entre el texto principal y los detalles */
-  align-items: flex-start; /* Alinea los elementos desde arriba */
-  gap: 20px; /* Espacio entre los bloques */
-  margin: 0 auto; /* Centra la sección */
-  position: relative; /* Para manipular la posición de la línea */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 0 auto;
+  position: relative;
 }
 
 .intro-main-text {
-  flex: 3; /* Ocupa más espacio que los detalles */
+  flex: 3;
 }
 
 .vertical-line {
-  width: 2px; /* Grosor de la línea */
-  background-color: #8797a4; /* Color de la línea */
-  position: absolute; /* Coloca la línea entre los textos */
-  left: 70%; /* Posiciona la línea entre los dos bloques */
+  width: 2px;
+  background-color: #8797a4;
+  position: absolute;
+  left: 70%;
   bottom: 0;
   min-height: 70%;
 }
 
 .intro-details {
-  flex: 1; /* Ocupa menos espacio */
+  flex: 1;
 
-  text-align: left; /* Alinea el texto a la izquierda */
-  font-size: 0.9rem; /* Tamaño más pequeño para los detalles */
-  line-height: 1.4; /* Espaciado entre líneas */
-  margin-top: auto; /* Asegura que se alinee con la última línea del texto principal */
+  text-align: left;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  margin-top: auto;
   margin-left: 175px;
 
-  position: relative; /* Para poder manipular la línea */
+  position: relative;
 }
 
 /**/
@@ -557,7 +452,7 @@ body {
   line-height: 1.5;
   margin-bottom: 10px;
 
-  text-align: left; /* Justifica el texto */
+  text-align: left;
 }
 
 .details {
@@ -568,53 +463,38 @@ body {
 
 .image-section {
   text-align: center;
-  margin-top: 40px;
 }
 
 .image-section .main-image {
   max-width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
-  border: 2px solid #4a4a4a; /* Borde de 4px de grosor con color #8797a4 */
-  border-radius: 10px; /* Bordes redondeados (opcional) */
+  height: auto;
+  border: 2px solid #4a4a4a;
+  border-radius: 10px;
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .noborder-image {
   max-width: 100%;
-  height: auto; /* Mantiene la proporción de la imagen */
+  height: auto;
   border: transparent;
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-.video-section {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.video-section .main-video {
-  max-width: 100%; /* El vídeo se adapta al contenedor */
-  height: auto; /* Mantiene la proporción original */
-  border: 2px solid #4a4a4a; /* Opcional: borde */
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 10px;
-  margin-top: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .noborder-video {
-  max-width: 100%; /* El vídeo se adapta al contenedor */
-  height: auto; /* Mantiene la proporción original */
-  border: transparent;
-  border-radius: 10px; /* Bordes redondeados */
-  margin-bottom: 10px;
-  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 /* Navigation Buttons */
 .navigation {
   position: fixed;
-  bottom: 20px;
+  bottom: 10px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -622,23 +502,23 @@ body {
 }
 
 .button {
-  font-size: 1rem; /* Mantén el tamaño del texto igual */
+  font-size: 1rem;
   color: #8797a4;
   background: none;
   border: none;
   cursor: pointer;
   padding: 10px 20px;
-  transition: color 0.3s ease, font-weight 0.3s ease; /* Transición suave para el color y el grosor */
+  transition: color 0.3s ease, font-weight 0.3s ease;
   text-transform: uppercase;
-  display: flex; /* Usar flexbox para alinear el contenido */
-  align-items: center; /* Centra la flecha y el texto verticalmente */
+  display: flex;
+  align-items: center;
   text-decoration: none;
 }
 
 .button:hover {
-  background: none; /* Elimina el fondo oscuro */
-  color: #8797a4; /* Mantiene el color actual */
-  font-weight: bold; /* Solo pone el texto en negrita */
+  background: none;
+  color: #8797a4;
+  font-weight: bold;
 }
 
 .button:focus {
@@ -662,34 +542,42 @@ body {
   margin-bottom: 3px;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-  }
+/**/
 
-  .nav a {
-    font-size: 0.9rem;
-  }
+/* CONTACT Page */
 
-  .intro-section h1 {
-    font-size: 1.5rem;
-  }
-
-  .intro-section p {
-    font-size: 0.9rem;
-    max-width: 80%; /* Ajusta el texto a un ancho mayor en móvil */
-  }
-
-  .image-section h2 {
-    font-size: 1.5rem;
-  }
-
-  .nav-button {
-    font-size: 0.9rem;
-  }
+.contactpage {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f6f3ef;
 }
 
+.contact-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.contact-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.contact-image .mobile_only {
+  display: none;
+}
 /**/
+
+.introybiblio {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding: 50 0px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}

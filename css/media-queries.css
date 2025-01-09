@@ -10,24 +10,27 @@
   /* Para dispositivos móviles o los más pequeños */
   header {
     font-size: 1.3rem; /* Reduce el tamaño del texto */
-    padding: 20px 20px; /* Reduce el padding general en móvil */
+    margin-top: 25px;
+    padding: 0px 20px 0px; /* Reduce el padding general y ajusta el margen inferior */
   }
 
   .nav-buttons {
     gap: 20px; /* Reduce el espacio entre los botones */
+    margin-right: 0; /* Reduce la separación del margen derecho */
+    justify-content: flex-end; /* Asegura que los botones se alineen a la derecha */
   }
+}
 
-  .nav-buttons a {
-    font-size: 1.3rem; /* Ajusta el tamaño del texto en los enlaces */
-  }
+.nav-buttons a {
+  font-size: 1.3rem; /* Ajusta el tamaño del texto en los enlaces */
+}
 
-  .logo {
-    font-size: 1.3rem; /* Ajusta el tamaño de la marca/logo */
-  }
+.logo {
+  font-size: 1.3rem; /* Ajusta el tamaño de la marca/logo */
+}
 
-  .logo a {
-    padding: 0px 20px; /* Ajusta el margen interno del logo */
-  }
+.logo a {
+  padding: 0px 20px; /* Ajusta el margen interno del logo */
 }
 
 /**/
@@ -37,7 +40,16 @@
   body {
     font-size: 1rem;
   }
+  header {
+    padding: 0px 0px; /* Reduce aún más el padding para móviles más pequeños */
+  }
+  .nav-buttons {
+    gap: 15px; /* Reduce el espacio entre botones */
+    margin-right: 0px; /* Ajusta el margen derecho para móviles pequeños */
+  }
 }
+
+/* tamaños de texto */
 
 /* Mobile Landscape */
 @media only screen and (max-width: 800px) and (orientation: landscape) {
@@ -73,3 +85,434 @@
     font-size: 2rem;
   }
 }
+
+/**/
+
+/* Media Queries del MESH GRADIENTS */
+
+/* Los Media Queries del Mesh Gradients (página principal o index.html,
+se encuentran en su hoja de estilos CSS correspondiente, nombrada como meshgradient.css) */
+
+/**/
+
+/* Media Queries para INFO PAGE */
+
+/* Desktop (Pantallas grandes) */
+@media (min-width: 1200px) {
+  .info_page {
+    height: 100vh; /* Asegura que la altura de la página se mantenga en 100% de la pantalla */
+    overflow-y: auto; /* Habilita el scroll vertical cuando sea necesario */
+    padding-top: 50px; /* Añadir espacio en el margen superior para evitar que el contenido se oculte */
+  }
+
+  .info_text {
+    font-size: 0.9rem; /* Reducir el tamaño de la fuente */
+    height: 100vh; /* La altura de la pantalla completa */
+    display: flex; /* Mantener el diseño en columnas */
+    justify-content: space-between; /* Separar las columnas */
+    align-items: flex-start; /* Alinear las columnas desde la parte superior */
+    gap: 30px; /* Espacio entre las columnas */
+  }
+
+  .info_lefttext,
+  .info_righttext {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente de las columnas */
+    padding-bottom: 60px; /* Añadir espacio inferior para evitar que el contenido se pegue al borde inferior */
+  }
+
+  .info_lefttext {
+    margin-top: 100px; /* Añadir margen inferior en la columna izquierda */
+  }
+
+  .info_righttext {
+    margin-top: 100px; /* Empujar el contenido de la columna derecha hacia abajo */
+  }
+}
+
+/* Tablet (Pantallas medianas) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .info_page {
+    height: 100vh; /* Asegura que la altura de la página se mantenga en 100% de la pantalla */
+    overflow-y: auto; /* Habilita el scroll vertical cuando sea necesario */
+    padding-top: 50px; /* Añadir espacio en el margen superior para evitar que el contenido se oculte */
+  }
+
+  .info_text {
+    font-size: 0.95rem; /* Reducir el tamaño de la fuente para tablet */
+    display: flex; /* Mantener el diseño en columnas */
+    justify-content: space-between; /* Separar las columnas */
+    align-items: flex-start; /* Alinear las columnas desde la parte superior */
+    gap: 30px; /* Espacio entre las columnas */
+  }
+
+  .info_lefttext,
+  .info_righttext {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente de las columnas */
+    width: 48%; /* Ajustar el tamaño de las columnas */
+    padding-bottom: 60px; /* Añadir espacio inferior para evitar que el contenido se pegue al borde inferior */
+  }
+
+  .info_lefttext {
+    margin-top: 100px; /* Añadir margen inferior en la columna izquierda */
+  }
+
+  .info_righttext {
+    margin-top: 100px; /* Empujar el contenido de la columna derecha hacia abajo */
+  }
+}
+
+/* Móvil (Pantallas pequeñas) */
+@media (max-width: 767px) {
+  .info_text {
+    font-size: 0.85rem; /* Reducir aún más el tamaño de la fuente */
+    flex-direction: column; /* Cambiar de columnas a una sola columna */
+    padding: 80px; /* Reducir los márgenes */
+    overflow-x: hidden; /* Ocultar el desbordamiento horizontal */
+    height: auto; /* Permitir que el contenido crezca en altura */
+    align-items: center; /* Centrar los elementos horizontalmente */
+    justify-content: flex-start; /* Asegurar que los elementos comiencen desde arriba */
+    max-width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+    width: 100%; /* Asegura que el contenedor ocupe todo el ancho disponible */
+  }
+
+  .info_lefttext,
+  .info_righttext {
+    width: 100%; /* Las columnas ocupan todo el ancho */
+    margin-left: 0; /* Eliminar el margen izquierdo */
+    font-size: 1rem; /* Tamaño adecuado de la fuente */
+    text-align: center; /* Centrar el texto */
+    margin-bottom: 20px; /* Añadir margen inferior */
+  }
+
+  /* Aseguramos que la imagen esté centrada */
+  .info_lefttext {
+    display: flex;
+    flex-direction: column; /* Alinear los elementos en columna */
+    align-items: center; /* Centrar la imagen y los textos dentro de este contenedor */
+    justify-content: center; /* Centrar los elementos en el contenedor */
+    margin-bottom: 20px; /* Añadir espacio debajo */
+  }
+
+  .cuadrada {
+    width: 200px; /* Ajustamos el tamaño de la imagen */
+    height: 200px; /* Ajustamos la altura de la imagen */
+    object-fit: cover; /* Mantener la proporción de la imagen */
+    margin: 0px 0; /* Espaciado superior e inferior */
+  }
+
+  .info_righttext {
+    margin-top: 20px; /* Añadir margen superior para evitar solapamientos */
+  }
+}
+
+/**/
+
+/* Media Queries del WORK PAGE */
+
+/* Tablet: Landscape (768px to 1024px) */
+@media (max-width: 1024px) {
+  .item h2 {
+    font-size: 3.5rem; /* Reduce the font size proportionally */
+  }
+
+  .item h6 {
+    font-size: 1.3rem;
+  }
+
+  .item p {
+    font-size: 0.9rem;
+  }
+
+  .item1 {
+    font-size: 1.6rem; /* Reduce item font size proportionally */
+    margin-right: 280px;
+  }
+
+  .item2 {
+    font-size: 1.4rem;
+  }
+
+  .item3 {
+    font-size: 1.8rem;
+  }
+
+  .item4 {
+    font-size: 1.5rem;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    gap: 15px; /* Reduce gap between items */
+  }
+
+  .desktop-only {
+    display: inline;
+  }
+  .tablet-only {
+    display: none;
+  }
+}
+
+/* Mobile: Portrait (up to 767px) */
+@media (max-width: 767px) {
+  .item h2 {
+    font-size: 2.2rem; /* More reduced size for smaller screens */
+  }
+
+  .item h6 {
+    font-size: 0.8rem; /* Even smaller size for mobile */
+    margin: 6px 0 0;
+  }
+
+  .item p {
+    font-size: 0.75rem; /* Small text size for mobile */
+    margin: 6px 0 0;
+  }
+
+  .item1 {
+    font-size: 1.2rem; /* Further reduce item font size */
+    margin-right: 120px;
+  }
+
+  .item2 {
+    font-size: 1rem;
+  }
+
+  .item3 {
+    font-size: 1.4rem;
+  }
+
+  .item4 {
+    font-size: 1.3rem;
+    margin-right: 100px;
+  }
+
+  /* Adjust gap and margins for mobile */
+  .container {
+    margin-left: 20px; /* Reduce margin for smaller screens */
+    margin-bottom: 40px; /* Reduce bottom margin */
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    gap: 10px; /* Reduce gap between items */
+  }
+}
+
+/**/
+
+/* Media Queries de las PROJECT PAGE */
+
+/* Desktop (Pantallas grandes) */
+@media (min-width: 1200px) {
+  .main-content {
+    padding: 70px 40px 40px; /* Mantener el padding actual */
+  }
+
+  .intro-section {
+    flex-direction: row; /* Mantener la distribución en fila */
+    justify-content: space-between; /* Espacio entre texto y detalles */
+    align-items: flex-start; /* Alinear los elementos desde arriba */
+    gap: 20px;
+  }
+
+  .intro-main-text {
+    flex: 3; /* Más espacio para el texto principal */
+  }
+
+  .intro-details {
+    flex: 1; /* Menos espacio para los detalles */
+    text-align: left;
+    font-size: 1rem; /* Tamaño de fuente más grande para escritorio */
+    line-height: 1.4;
+    margin-top: auto;
+    margin-left: 175px;
+  }
+
+  .vertical-line {
+    width: 2px; /* Grosor de la línea */
+    background-color: #8797a4;
+    position: absolute;
+    left: 70%;
+    bottom: 0;
+    min-height: 70%;
+  }
+
+  .image-section {
+    margin-top: 40px;
+  }
+
+  .image-section .main-image {
+    margin-bottom: 20px;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+  }
+
+  .video-section {
+    margin-top: 40px;
+  }
+
+  .video-section .main-video {
+    margin-bottom: 10px;
+    border: 2px solid #4a4a4a;
+    border-radius: 10px;
+  }
+
+  .navigation {
+    padding: 0 40px; /* Ajuste para el padding en desktop */
+  }
+
+  .button {
+    font-size: 1rem; /* Mantener el tamaño de la fuente */
+  }
+}
+
+/* Tablet (Pantallas medianas) */
+@media (max-width: 1199px) and (min-width: 768px) {
+  .main-content {
+    padding: 40px 40px; /* Reducir el padding lateral */
+  }
+
+  .intro-section {
+    flex-direction: column; /* Cambiar el layout a columna */
+    justify-content: center; /* Centrar los bloques verticalmente */
+    gap: 20px; /* Espacio entre bloques */
+  }
+
+  .intro-main-text {
+    flex: none; /* Desactivar el flex para que no ocupe todo el espacio */
+    width: 100%; /* Hacer que el texto ocupe el 100% */
+    margin-top: 30px; /* Aumenta el espacio desde el margen izquierdo */
+  }
+
+  .intro-details {
+    margin-left: 0px; /* Aumenta el espacio desde el margen izquierdo */
+    border-top: 2px solid #8797a4;
+    padding-top: 10px;
+    font-size: 0.9rem; /* Ajustar el tamaño de la fuente */
+    text-align: center; /* Centrar el texto */
+  }
+
+  .vertical-line {
+    display: none; /* Ocultar la línea vertical en tabletas */
+  }
+
+  .noborder-image {
+    margin-bottom: 20px;
+  }
+
+  .image-section .main-image {
+    margin-bottom: 20px;
+  }
+
+  .video-section .main-video {
+    margin-bottom: 20px;
+  }
+
+  .navigation {
+    padding: 0 30px; /* Ajustar el padding */
+  }
+
+  .button {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+  }
+}
+
+/* Mobile (Pantallas pequeñas) */
+@media (max-width: 767px) {
+  .main-content {
+    padding: 20px; /* Añadir margen interno a toda la sección principal */
+  }
+
+  .intro-section {
+    flex-direction: column; /* Cambiar el layout a columna para adaptarse mejor a la pantalla */
+    justify-content: center; /* Centrar los elementos */
+    align-items: center; /* Centrar los elementos en el eje horizontal */
+    gap: 20px; /* Espacio entre los bloques */
+  }
+
+  .intro-main-text {
+    width: 100%; /* Asegurarse de que el texto ocupe todo el ancho disponible */
+    padding-left: 20px; /* Añadir espacio a la izquierda para no estar pegado al borde */
+    padding-right: 20px; /* Añadir espacio a la derecha para no estar pegado al borde */
+    font-size: 0.85rem; /* Ajustar tamaño de fuente */
+    margin-top: 50px; /* Aumenta el espacio desde el margen izquierdo */
+  }
+
+  .intro-details {
+    width: 100%; /* Asegura que el contenido ocupe todo el ancho */
+    margin-left: 40px; /* Mantén el margen izquierdo para el texto */
+    font-size: 0.8rem; /* Reducir un poco el tamaño de la fuente */
+    padding-top: 10px; /* Espacio por encima del texto */
+    text-align: left;
+    position: relative; /* Para poder posicionar la línea de forma independiente */
+  }
+
+  .intro-details::before {
+    content: ""; /* Genera una línea visual */
+    display: block; /* Asegura que sea visible */
+    width: 85%; /* Ajusta el ancho de la línea (por ejemplo, 80% del ancho del contenedor) */
+    height: 2px; /* Grosor de la línea */
+    background-color: #8797a4; /* Color de la línea */
+    position: absolute; /* Para controlar su posición */
+    top: 0; /* Asegura que la línea esté al principio del contenedor */
+    left: 0; /* Ajusta el inicio de la línea */
+  }
+
+  .vertical-line {
+    display: none; /* Ocultar la línea vertical en móvil */
+  }
+
+  .image-section {
+    margin-bottom: 40px;
+    text-align: center; /* Centrar las imágenes */
+  }
+
+  .image-section .main-image {
+    margin-bottom: 20px;
+    width: 100%; /* Hacer que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantener proporciones de la imagen */
+  }
+
+  .video-section {
+    margin-bottom: 20px;
+    text-align: center; /* Centrar el vídeo */
+  }
+
+  .video-section .main-video {
+    margin-bottom: 20px;
+    width: 100%; /* Asegurar que el vídeo se ajuste al contenedor */
+    height: auto; /* Mantener la proporción del vídeo */
+  }
+
+  .navigation {
+    padding: 0 30px; /* Ajustar el padding lateral */
+    bottom: 20px; /* Asegurar que el botón de navegación no se quede pegado al borde */
+  }
+
+  .button {
+    font-size: 1rem; /* Ajustar el tamaño de la fuente */
+    padding: 10px 20px; /* Ajustar los márgenes internos */
+  }
+}
+
+/**/
+
+/* Media Queries del CONTACT PAGE */
+
+/* Media Query para Móvil */
+@media (max-width: 768px) {
+  .contact-image img {
+    display: none; /* Oculta la imagen principal */
+  }
+
+  .contact-image .mobile_only {
+    display: block; /* Muestra la imagen específica para móviles */
+  }
+}
+
+/**/
