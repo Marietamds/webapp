@@ -67,6 +67,7 @@ header {
   color: #8797a4;
   align-items: center;
   margin: 0;
+  margin-left: 16px;
 }
 
 .logo a {
